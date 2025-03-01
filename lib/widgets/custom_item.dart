@@ -7,9 +7,9 @@ class CustomItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       child: Container(
-        padding: EdgeInsets.only(right: 16, bottom: 16),
+        padding: const EdgeInsets.only(right: 16, bottom: 16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: Colors.orange,
@@ -18,8 +18,8 @@ class CustomItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              contentPadding: EdgeInsets.only(top: 16, bottom: 16, left: 16),
-              title: Text(
+              contentPadding: const EdgeInsets.only(top: 16, bottom: 16, left: 16),
+              title: const Text(
                 'Flutter Tips',
                 style: TextStyle(color: Colors.black, fontSize: 24),
               ),
@@ -33,7 +33,7 @@ class CustomItem extends StatelessWidget {
               ),
               trailing: IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon:const Icon(
                   FontAwesomeIcons.trash,
                   color: Colors.black,
                 ),
